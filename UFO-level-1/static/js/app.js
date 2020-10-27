@@ -8,7 +8,7 @@ var tbody = d3.select("tbody");
 var button = d3.select("#filter-btn");
 
 // Select the date input
-var form = d3.select(".form-group");
+var form = d3.select("#ufo-form");
 
 // Create event handlers 
 button.on("click", runEnter);
