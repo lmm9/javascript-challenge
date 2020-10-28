@@ -32,12 +32,13 @@ function runEnter() {
   var filteredData = tableData.filter(sighting=> sighting.datetime === inputValue);
 
   console.log(filteredData);
-
+  tbody.html("")
 
 // //Loop Through `data` and console.log each UFO Sighting object
     filteredData.forEach((ufoSighting) => {
 
 // //Use d3 to append one table row `tr` for each UFO Sighting object
+    
     var row = tbody.append("tr");
 
 // // Step 3:  Use `Object.entries` to console.log each UFO Sighting value
